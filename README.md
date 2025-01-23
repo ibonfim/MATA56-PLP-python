@@ -12,31 +12,33 @@ Este projeto implementa um sistema de reserva de datashows para salas utilizando
 
 ## Estrutura do Código
 
-- 
+Classe principal que gerencia as reservas e liberações de datashows.
+-
+  SistemaReserva
 
-SistemaReserva
 
-: Classe principal que gerencia as reservas e liberações de datashows.
+
+Tenta reservar um datashow para a sala especificada.
   - 
+  reservar_datashow(sala)
 
-reservar_datashow(sala)
 
-: Tenta reservar um datashow para a sala especificada.
-  - 
 
-liberar_datashow(sala)
-
-: Libera o datashow da sala especificada.
+Libera o datashow da sala especificada.
 - 
+  liberar_datashow(sala)
 
-solicitar_reserva(sistema, sala)
 
-: Função que simula uma solicitação de reserva e liberação de datashow.
-- Bloco 
 
-if __name__ == "__main__":
+Função que simula uma solicitação de reserva e liberação de datashow.
+-
+  solicitar_reserva(sistema, sala)
 
-: Cria o sistema de reservas e inicia múltiplas threads para simular solicitações simultâneas.
+
+
+Cria o sistema de reservas e inicia múltiplas threads para simular solicitações simultâneas.
+-  
+  if __name__ == "__main__":
 
 ## Requisitos
 
